@@ -1,6 +1,8 @@
 # IdeaHacks IOT Whiteboard
 
-Our project for the UCLA IdeaHacks 2020 Hackathon features an IoT Whiteboard. At UCLA, each room has a whiteboard outside for students to express themselves and put up notices. Now what if you could customize that further with lights, messages, and drawings? What if you could update it from any location on campus? That forms the core of our idea — a whiteboard device where you can draw and write messages using your mobile device.
+Our project for the UCLA IdeaHacks 2020 Hackathon features an IoT Whiteboard. At UCLA, each room has a whiteboard outside for students to express themselves and put up notices. Now what if you could customize that further with lights, messages, and drawings? What if you could update it from any location on campus? That forms the core of our idea — a whiteboard device where you can draw and write messages from anywhere using your mobile device.
+
+![alt text](https://github.com/Realises/ideahacks/blob/master/WebSocket.png)
 
 Our presentation slides for our product contain images, technical details, and our pitch to industry judges during the hackathon: https://docs.google.com/presentation/d/1oXL-UVSUKEl8SZ1EFlXJt8-8BcVPcubrDTF5FJEsTZE/edit?usp=sharing 
 
