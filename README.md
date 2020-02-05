@@ -1,3 +1,10 @@
+# IdeaHacks IOT Whiteboard
+
+Our project for the UCLA IdeaHacks 2020 Hackathon features an IoT Whiteboard. At UCLA, each room has a whiteboard outside for students to express themselves and put up notices. Now what if you could customize that further with lights, messages, and drawings? What if you could update it from any location on campus? That forms the core of our idea — a whiteboard device where you can draw and write messages using your mobile device.
+
+Our presentation slides for our product contain images, technical details, and our pitch to industry judges during the hackathon: https://docs.google.com/presentation/d/1oXL-UVSUKEl8SZ1EFlXJt8-8BcVPcubrDTF5FJEsTZE/edit?usp=sharing 
+
+
 # Adafruit_SSD1306 [![Build Status](https://travis-ci.org/adafruit/Adafruit_SSD1306.svg?branch=master)](https://travis-ci.org/adafruit/Adafruit_SSD1306)
 
 This is a library for our Monochrome OLEDs based on SSD1306 drivers
