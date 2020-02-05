@@ -68,7 +68,7 @@ ATtiny85    |            |      X     |          |
 
 <!-- END COMPATIBILITY TABLE -->
 
-# Arduino ESP32 filesystem uploader 
+# Arduino ESP32 filesystem uploader (SPIFFS)
 
 Arduino plugin which packs sketch data folder into SPIFFS filesystem image,
 and uploads the image to ESP32 flash memory.
