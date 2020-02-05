@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8\">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Dorm Status</title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            var status;
+            var url = "IdeaHack19.html";
+            $(document).ready(function(){
+                $('#save_button').click(function(e){
+                    e.preventDefault();
+                    status = $('#myStatus').val();
+                    $.get(url, function(data){
+                        console.log(data);
+                        //alert(data);
+                    });
+                });
+            });
+            function setStatus(s){
+                status = s;
+                //alert(s);
+            }
+        </script>
+        
+    </head>
+    <body>
+        <a href="/class"><img src="https://i.imgur.com/G2fGX8H.jpg" onclick="setStatus('class')" style="width:260px; height:130px;"></a>
+        <a href="/eat"><img src="https://i.imgur.com/z1SfTSe.jpg" onclick="setStatus('eat')" style="width:260px; height:130px;"></a>
+        <a href="/privacy"><img src="https://i.imgur.com/tg2FcSM.jpg" onclick="setStatus('privacy')" style="width:260px; height:130px;"></a>
+        <a href="/sleep"><img src="https://i.imgur.com/uqR8z4n.jpg" onclick="setStatus('sleep')" style="width:260px; height:130px;"></a>
+        <a href="/study"><img src="https://i.imgur.com/263St7Q.jpg" onclick="setStatus('study')" style="width:260px; height:130px;"></a>
+        <a href="/social"><img src="https://i.imgur.com/de5zZqK.jpg" onclick="setStatus('social')" style="width:260px; height:130px;"></a>
+        
+        <input type='text' name='myStatus' id='myStatus' size=2 autofocus>
+        <div>
+            <br><button id="save_button">Send</button>
+        </div>
+    </body>
+</html>
