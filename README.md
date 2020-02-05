@@ -6,6 +6,8 @@ Our project for the UCLA IdeaHacks 2020 Hackathon features an IoT Whiteboard. At
 
 Our presentation slides for our product contain images, technical details, and our pitch to industry judges during the hackathon: https://docs.google.com/presentation/d/1oXL-UVSUKEl8SZ1EFlXJt8-8BcVPcubrDTF5FJEsTZE/edit?usp=sharing 
 
+We used the Adafruit_SSD1306 library to create graphic images and text on the OLED. To create a websocket server and integrate HTML and CSS, we used an Arduino ESP32 filesystem uploader titled SPIFFs. Both of the READMEs and their documentation can be found below.
+
 
 # Adafruit_SSD1306 [![Build Status](https://travis-ci.org/adafruit/Adafruit_SSD1306.svg?branch=master)](https://travis-ci.org/adafruit/Adafruit_SSD1306)
 
@@ -65,3 +67,39 @@ ATtiny85    |            |      X     |          |
   * ATtiny85 : Adafruit Gemma, Arduino Gemma, Adafruit Trinket
 
 <!-- END COMPATIBILITY TABLE -->
+
+# Arduino ESP32 filesystem uploader 
+
+Arduino plugin which packs sketch data folder into SPIFFS filesystem image,
+and uploads the image to ESP32 flash memory.
+
+## Installation
+
+- Make sure you use one of the supported versions of Arduino IDE and have ESP32 core installed.
+- Download the tool archive from [releases page](https://github.com/me-no-dev/arduino-esp32fs-plugin/releases/latest).
+- In your Arduino sketchbook directory, create tools directory if it doesn't exist yet.
+- Unpack the tool into tools directory (the path will look like ```<home_dir>/Arduino/tools/ESP32FS/tool/esp32fs.jar```).
+- Restart Arduino IDE. 
+
+On the OS X create the tools directory in ~/Documents/Arduino/ and unpack the files there
+
+## Usage
+
+- Open a sketch (or create a new one and save it).
+- Go to sketch directory (choose Sketch > Show Sketch Folder).
+- Create a directory named `data` and any files you want in the file system there.
+- Make sure you have selected a board, port, and closed Serial Monitor.
+- Select *Tools > ESP32 Sketch Data Upload* menu item. This should start uploading the files into ESP32 flash file system.
+
+  When done, IDE status bar will display SPIFFS Image Uploaded message. Might take a few minutes for large file system sizes.
+
+## Credits and license
+
+- Copyright (c) 2015 Hristo Gochkov (hristo at espressif dot com)
+- Licensed under GPL v2 ([text](LICENSE))
+- Maintained by Hristo Gochkov (hristo at espressif dot com)
+
+## Issues and suggestions
+
+File issues here on github, or ask your questions on the [esp32.com forum](http://esp32.com).
+
