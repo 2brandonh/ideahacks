@@ -4,6 +4,8 @@ Our project for the UCLA IdeaHacks 2020 Hackathon features an IoT Whiteboard. At
 
 ![alt text](https://github.com/Realises/ideahacks/blob/master/WebSocket.png)
 
+# Presentation Slides
+
 Our presentation slides for our product contain images, technical details, and our pitch to industry judges during the hackathon: https://docs.google.com/presentation/d/1oXL-UVSUKEl8SZ1EFlXJt8-8BcVPcubrDTF5FJEsTZE/edit?usp=sharing 
 
 We used the Adafruit_SSD1306 library to create graphic images and text on the OLED. To create a websocket server and integrate HTML and CSS, we used an Arduino ESP32 filesystem uploader titled SPIFFs. Both of the READMEs and their documentation can be found below.
